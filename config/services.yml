@@ -1,0 +1,8 @@
+services:
+    dmzx.countdownheader.listener:
+        class: dmzx\countdownheader\event\listener
+        arguments:
+            - '@template'
+            - '@config'
+        tags:
+            - { name: event.listener }
