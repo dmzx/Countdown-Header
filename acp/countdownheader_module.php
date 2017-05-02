@@ -11,42 +11,31 @@ namespace dmzx\countdownheader\acp;
 
 class countdownheader_module
 {
-	var $u_action;
+	public $u_action;
 
 	function main($id, $mode)
 	{
-		global $user, $template, $request, $config;
+		global $phpbb_container, $user;
 
-		$this->tpl_name = 'acp_countdownheader_config';
-		$this->page_title = $user->lang['ACP_COUNTDOWNHEADER'];
-		add_form_key('acp_countdownheader_config');
+		// Add the ACP lang file
+		$user->add_lang_ext('dmzx/countdownheader', 'acp_countdownheader');
 
-		$submit = $request->is_set_post('submit');
-		if ($submit)
+		// Get an instance of the admin controller
+		$admin_controller = $phpbb_container->get('dmzx.countdownheader.admin.controller');
+
+		// Make the $u_action url available in the admin controller
+		$admin_controller->set_page_url($this->u_action);
+
+		switch ($mode)
 		{
-			if (!check_form_key('acp_countdownheader_config'))
-			{
-				trigger_error('FORM_INVALID');
-			}
-			$config->set('countdownheader_enable', 		$request->variable('countdownheader_enable', 0));
-			$config->set('countdownheader_testmode', 	$request->variable('countdownheader_testmode', 0));
-			$config->set('countdownheader_date', 		$request->variable('countdownheader_date', ''));
-			$config->set('countdownheader_text_big', 	$request->variable('countdownheader_text_big', '', true));
-			$config->set('countdownheader_text_small', 	$request->variable('countdownheader_text_small', '', true));
-			$config->set('countdownheader_url', 		$request->variable('countdownheader_url', '', true));
-
-			trigger_error($user->lang['COUNTDOWNHEADER_CONFIG_SAVED'] . adm_back_link($this->u_action));
+			case 'config':
+				// Load a template from adm/style for our ACP page
+				$this->tpl_name = 'acp_countdownheader_config';
+				// Set the page title for our ACP page
+				$this->page_title = $user->lang['ACP_COUNTDOWNHEADER'];
+				// Load the display options handle in the admin controller
+				$admin_controller->display_options();
+			break;
 		}
-
-		$template->assign_vars(array(
-			'COUNTDOWNHEADER_VERSION'			=> (isset($config['countdownheader_version'])) ? $config['countdownheader_version'] : '',
-			'COUNTDOWNHEADER_ENABLE'			=> (!empty($config['countdownheader_enable'])) ? true : false,
-			'COUNTDOWNHEADER_TESTMODE'			=> (!empty($config['countdownheader_testmode'])) ? true : false,
-			'COUNTDOWNHEADER_DATE'				=> (isset($config['countdownheader_date'])) ? $config['countdownheader_date'] : '',
-			'COUNTDOWNHEADER_TEXT_BIG'			=> (isset($config['countdownheader_text_big'])) ? $config['countdownheader_text_big'] : '',
-			'COUNTDOWNHEADER_TEXT_SMALL'		=> (isset($config['countdownheader_text_small'])) ? $config['countdownheader_text_small'] : '',
-			'COUNTDOWNHEADER_URL'				=> (isset($config['countdownheader_url'])) ? $config['countdownheader_url'] : '',
-			'U_ACTION'							=> $this->u_action,
-		));
 	}
 }

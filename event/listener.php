@@ -10,28 +10,38 @@
 namespace dmzx\countdownheader\event;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
+use phpbb\template\template;
+use phpbb\config\config;
+use phpbb\files\factory;
 
 class listener implements EventSubscriberInterface
 {
-	/** @var \phpbb\template\template */
+	/** @var template */
 	protected $template;
 
-	/** @var \phpbb\config\config */
+	/** @var config */
 	protected $config;
+
+	/** @var factory */
+	protected $files_factory;
 
 	/**
 	* Constructor
 	*
-	* @param \phpbb\template\template		 	$template
-	* @param \phpbb\config\config				$config
+	* @param template	$template
+	* @param config		$config
+	* @param factory	$files_factory
 	*
 	*/
 	public function __construct(
-		\phpbb\template\template $template,
-		\phpbb\config\config $config)
+		template $template,
+		config $config,
+		factory $files_factory = null
+	)
 	{
-		$this->template = $template;
-		$this->config = $config;
+		$this->template 		= $template;
+		$this->config 			= $config;
+		$this->files_factory 	= $files_factory;
 	}
 
 	static public function getSubscribedEvents()
@@ -60,7 +70,8 @@ class listener implements EventSubscriberInterface
 			'COUNTDOWNHEADER_DATE'				=> $this->config['countdownheader_date'],
 			'COUNTDOWNHEADER_TEXT_BIG'			=> $this->config['countdownheader_text_big'],
 			'COUNTDOWNHEADER_TEXT_SMALL'		=> $this->config['countdownheader_text_small'],
-			'COUNTDOWNHEADER_URL'				=> $this->config['countdownheader_url'],
+			'COUNTDOWNHEADER_URL'				=> htmlspecialchars_decode($this->config['countdownheader_url']),
+			'PHPBB_IS_32'						=> ($this->files_factory !== null) ? true : false,
 		));
 	}
 }

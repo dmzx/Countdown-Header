@@ -1,8 +1,17 @@
 services:
+    dmzx.countdownheader.admin.controller:
+        class: dmzx\countdownheader\controller\admin_controller
+        arguments:
+            - '@config'
+            - '@template'
+            - '@log'
+            - '@user'
+            - '@request'
     dmzx.countdownheader.listener:
         class: dmzx\countdownheader\event\listener
         arguments:
             - '@template'
             - '@config'
+            - '@?files.factory'
         tags:
             - { name: event.listener }

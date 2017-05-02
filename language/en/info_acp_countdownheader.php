@@ -36,4 +36,6 @@ if (empty($lang) || !is_array($lang))
 $lang = array_merge($lang, array(
 	'ACP_COUNTDOWNHEADER'			=> 'Countdown Header',
 	'ACP_COUNTDOWNHEADER_CONFIG'	=> 'Configuration',
+	//Log
+	'LOG_COUNTDOWNHEADER_SAVED'		=> '<strong>Countdown Header settings saved</strong>',
 ));

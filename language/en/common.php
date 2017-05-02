@@ -37,26 +37,8 @@ if (empty($lang) || !is_array($lang))
 //
 
 $lang = array_merge($lang, array(
-	'COUNTDOWNHEADER_COUNT_DAYS'				=> 'Days left',
-	'COUNTDOWNHEADER_COUNT_HOURS'				=> 'Hours left',
-	'COUNTDOWNHEADER_COUNT_MINUTES'				=> 'Minutes',
-	'COUNTDOWNHEADER_COUNT_SECONDS'				=> 'Seconds',
-
-	// ACP
-	'ACP_COUNTDOWNHEADER_CONFIG_EXPLAIN'		=> 'This is configuration page for the Countdown Header extension by <a href="http://www.dmzx-web.net"><strong>dmzx</strong></a>.',
-	'ACP_COUNTDOWNHEADER_CONFIG_SET'			=> 'Configuration',
-	'COUNTDOWNHEADER_VERSION'					=> 'Version',
-	'COUNTDOWNHEADER_CONFIG_SAVED'				=> 'Countdown Header settings saved',
-	'COUNTDOWNHEADER_ENABLE'					=> 'Enable Countdown Header',
-	'COUNTDOWNHEADER_ENABLE_EXPLAIN'			=> 'Enable or disable the Countdown Header',
-	'COUNTDOWNHEADER_DATE' 						=> 'Countdown Header date',
-	'COUNTDOWNHEADER_DATE_EXPLAIN'				=> 'Example: 2016/12/31 00:00:00',
-	'COUNTDOWNHEADER_TEXT_BIG' 					=> 'Countdown Header big text',
-	'COUNTDOWNHEADER_TEXT_BIG_EXPLAIN'			=> 'Countdown Header big text will be displayed on top when complete.',
-	'COUNTDOWNHEADER_TEXT_SMALL'	 			=> 'Countdown Header small text',
-	'COUNTDOWNHEADER_TEXT_SMALL_EXPLAIN' 		=> 'Countdown Header small text will be displayed on bottom when complete.',
-	'COUNTDOWNHEADER_TESTMODE' 					=> 'Activate testmode',
-	'COUNTDOWNHEADER_TESTMODE_EXPLAIN'			=> 'If testmode is activated only admins can view the Countdown Header',
-	'COUNTDOWNHEADER_URL' 						=> 'Countdown Header URL',
-	'COUNTDOWNHEADER_URL_EXPLAIN'				=> 'URL relative to your board, will be available when complete.<br />Set for example <em>downloads</em> ',
+	'COUNTDOWNHEADER_COUNT_DAYS'		=> 'Days left',
+	'COUNTDOWNHEADER_COUNT_HOURS'		=> 'Hours left',
+	'COUNTDOWNHEADER_COUNT_MINUTES'		=> 'Minutes',
+	'COUNTDOWNHEADER_COUNT_SECONDS'		=> 'Seconds',
 ));

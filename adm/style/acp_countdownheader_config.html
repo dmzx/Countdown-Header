@@ -2,42 +2,42 @@
 
 <h1>{L_ACP_COUNTDOWNHEADER}</h1>
 
-<p>{L_ACP_COUNTDOWNHEADER_CONFIG_EXPLAIN}<br />{L_COUNTDOWNHEADER_VERSION} {COUNTDOWNHEADER_VERSION}</p>
+<p><img src="https://img.shields.io/badge/{{ lang('Version') }}-{{ COUNTDOWNHEADER_VERSION }}-green.svg?style=plastic" /></p>
 
 <form id="acp_quotes_config" method="post" action="{U_ACTION}">
 	<fieldset>
-		<legend>{L_ACP_COUNTDOWNHEADER_CONFIG_SET}</legend>
+		<legend>{L_ACP_COUNTDOWNHEADER_CONFIGURATION}</legend>
 		<dl>
-			<dt><label for="countdownheader_enable">{L_COUNTDOWNHEADER_ENABLE}{L_COLON}</label><br />
-			<span>{L_COUNTDOWNHEADER_ENABLE_EXPLAIN}</span></dt>
+			<dt><label for="countdownheader_enable">{L_ACP_COUNTDOWNHEADER_ENABLE}{L_COLON}</label><br />
+			<span>{L_ACP_COUNTDOWNHEADER_ENABLE_EXPLAIN}</span></dt>
 			<dd><label><input type="radio" class="radio" name="countdownheader_enable" value="1"<!-- IF COUNTDOWNHEADER_ENABLE --> id="countdownheader_enable" checked="checked"<!-- ENDIF --> /> {L_YES}</label>
 			<label><input type="radio" class="radio" name="countdownheader_enable" value="0"<!-- IF not COUNTDOWNHEADER_ENABLE --> id="countdownheader_enable" checked="checked"<!-- ENDIF --> /> {L_NO}</label></dd>
 		</dl>
 		<dl>
-			<dt><label for="countdownheader_testmode">{L_COUNTDOWNHEADER_TESTMODE}{L_COLON}</label><br />
-			<span>{L_COUNTDOWNHEADER_TESTMODE_EXPLAIN}</span></dt>
+			<dt><label for="countdownheader_testmode">{L_ACP_COUNTDOWNHEADER_TESTMODE}{L_COLON}</label><br />
+			<span>{L_ACP_COUNTDOWNHEADER_TESTMODE_EXPLAIN}</span></dt>
 			<dd><label><input type="radio" class="radio" name="countdownheader_testmode" value="1"<!-- IF COUNTDOWNHEADER_TESTMODE --> id="countdownheader_testmode" checked="checked"<!-- ENDIF --> /> {L_YES}</label>
 			<label><input type="radio" class="radio" name="countdownheader_testmode" value="0"<!-- IF not COUNTDOWNHEADER_TESTMODE --> id="countdownheader_testmode" checked="checked"<!-- ENDIF --> /> {L_NO}</label></dd>
 		</dl>
 		<dl>
-			<dt><label for="countdownheader_date">{L_COUNTDOWNHEADER_DATE}{L_COLON}</label><br />
-			<span>{L_COUNTDOWNHEADER_DATE_EXPLAIN}</span></dt>
-			<dd><input name="countdownheader_date" type="text" id="countdownheader_date" value="{COUNTDOWNHEADER_DATE}" length="100" maxlength="255" /></dd>
+			<dt><label for="countdownheader_date">{L_ACP_COUNTDOWNHEADER_DATE}{L_COLON}</label><br />
+			<span>{L_ACP_COUNTDOWNHEADER_DATE_EXPLAIN}</span></dt>
+			<dd><input name="countdownheader_date" type="text" id="countdownheader_date" value="{COUNTDOWNHEADER_DATE}" maxlength="255" /></dd>
 		</dl>
 		<dl>
-			<dt><label for="countdownheader_text_big">{L_COUNTDOWNHEADER_TEXT_BIG}{L_COLON}</label><br />
-			<span>{L_COUNTDOWNHEADER_TEXT_BIG_EXPLAIN}</span></dt>
-			<dd><input name="countdownheader_text_big" type="text" id="countdownheader_text_big" value="{COUNTDOWNHEADER_TEXT_BIG}" length="100" maxlength="255" /></dd>
+			<dt><label for="countdownheader_text_big">{L_ACP_COUNTDOWNHEADER_TEXT_BIG}{L_COLON}</label><br />
+			<span>{L_ACP_COUNTDOWNHEADER_TEXT_BIG_EXPLAIN}</span></dt>
+			<dd><input name="countdownheader_text_big" type="text" id="countdownheader_text_big" value="{COUNTDOWNHEADER_TEXT_BIG}" maxlength="255" /></dd>
 		</dl>
 		<dl>
-			<dt><label for="countdownheader_text_small">{L_COUNTDOWNHEADER_TEXT_SMALL}{L_COLON}</label><br />
-			<span>{L_COUNTDOWNHEADER_TEXT_SMALL_EXPLAIN}</span></dt>
-			<dd><input name="countdownheader_text_small" type="text" id="countdownheader_text_small" value="{COUNTDOWNHEADER_TEXT_SMALL}" length="100" maxlength="255" /></dd>
+			<dt><label for="countdownheader_text_small">{L_ACP_COUNTDOWNHEADER_TEXT_SMALL}{L_COLON}</label><br />
+			<span>{L_ACP_COUNTDOWNHEADER_TEXT_SMALL_EXPLAIN}</span></dt>
+			<dd><input name="countdownheader_text_small" type="text" id="countdownheader_text_small" value="{COUNTDOWNHEADER_TEXT_SMALL}" maxlength="255" /></dd>
 		</dl>
 		<dl>
-			<dt><label for="countdownheader_url">{L_COUNTDOWNHEADER_URL}{L_COLON}</label><br />
-			<span>{L_COUNTDOWNHEADER_URL_EXPLAIN}</span></dt>
-			<dd><input name="countdownheader_url" type="text" id="countdownheader_url" value="{COUNTDOWNHEADER_URL}" length="100" maxlength="255" /></dd>
+			<dt><label for="countdownheader_url">{L_ACP_COUNTDOWNHEADER_URL}{L_COLON}</label><br />
+			<span>{L_ACP_COUNTDOWNHEADER_URL_EXPLAIN}</span></dt>
+			<dd><input name="countdownheader_url" type="text" id="countdownheader_url" value="{COUNTDOWNHEADER_URL}" class="text medium" maxlength="255" /></dd>
 		</dl>
 		<p class="submit-buttons">
 			<input type="hidden" name="action" value="save" />
