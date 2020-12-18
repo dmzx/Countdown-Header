@@ -2,9 +2,9 @@
 	"name": "dmzx/countdownheader",
 	"type": "phpbb-extension",
 	"description": "Countdown in header.",
-	"homepage": "http://www.dmzx-web.net",
-	"version": "1.0.2",
-	"time": "2017-05-02",
+	"homepage": "https://www.dmzx-web.net",
+	"version": "1.0.3",
+	"time": "2019-01-09",
 	"keywords": [
 		"phpbb",
 		"extension",
@@ -14,13 +14,14 @@
 	"authors": [
 		{
 			"name": "dmzx",
-			"homepage": "http://www.dmzx-web.net",
+			"homepage": "https://www.dmzx-web.net",
 			"email": "info@dmzx-web.net",
 			"role": "Extension Developer"
 		}
 	],
 	"require": {
-		"php": ">=5.3.3"
+		"php": ">=5.3.3",
+		"composer/installers": "~1.0"
 	},
 	"require-dev": {
 		"phpbb/epv": "dev-master"
@@ -33,7 +34,8 @@
 		"version-check": {
 			"host": "www.dmzx-web.net",
 			"directory": "/versions",
-			"filename": "countdownheader_version.json"
+			"filename": "countdownheader_version.json",
+			"ssl": true
 		}
 	}
 }

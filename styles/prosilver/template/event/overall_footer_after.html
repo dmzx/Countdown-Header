@@ -1,5 +1,5 @@
-<!-- IF COUNTDOWNHEADER_ENABLE -->
-<!-- INCLUDEJS jquery.jcountdownheader.min.js -->
+{% if COUNTDOWNHEADER_ENABLE %}
+{% INCLUDEJS 'jquery.jcountdownheader.min.js' %}
 <script type="text/javascript">
 	$(function() {
 		var $timerBox = $('#countdown-timer');
@@ -9,31 +9,31 @@
 		var number = '';
 		var unit = '';
 
-		var utc = new Date('{COUNTDOWNHEADER_DATE}').getTime();
+		var utc = new Date('{{ COUNTDOWNHEADER_DATE }}').getTime();
 
 		$timerBox.countdown(utc).on('update.countdown', function(event) {
 			if (event.offset.totalDays > 0) {
 				number = event.strftime('%D');
-				unit = '{LA_COUNTDOWNHEADER_COUNT_DAYS}';
+				unit = '{{ lang('COUNTDOWNHEADER_COUNT_DAYS')|escape('js') }}';
 			} else if (event.offset.hours > 0) {
 				number = event.strftime('%H');
-				unit = '{LA_COUNTDOWNHEADER_COUNT_HOURS}';
+				unit = '{{ lang('COUNTDOWNHEADER_COUNT_HOURS')|escape('js') }}';
 			} else if (event.offset.minutes > 0) {
 				number = event.strftime('%M');
-				unit = '{LA_COUNTDOWNHEADER_COUNT_MINUTES}';
+				unit = '{{ lang('COUNTDOWNHEADER_COUNT_MINUTES')|escape('js') }}';
 			} else if (event.offset.seconds > 0) {
 				number = event.strftime('%S');
-				unit = '{LA_COUNTDOWNHEADER_COUNT_SECONDS}';
+				unit = '{{ lang('COUNTDOWNHEADER_COUNT_SECONDS')|escape('js') }}';
 			}
 			$timerBig.html(number);
 			$timerSmall.html(unit);
 		}).on('finish.countdown', function() {
-			$timerBig.html('{COUNTDOWNHEADER_TEXT_BIG}');
-			$timerSmall.html('{COUNTDOWNHEADER_TEXT_SMALL}');
-			$timerBox.attr('href', '{COUNTDOWNHEADER_URL}');
+			$timerBig.html('{{ COUNTDOWNHEADER_TEXT_BIG }}');
+			$timerSmall.html('{{ COUNTDOWNHEADER_TEXT_SMALL }}');
+			$timerBox.attr('href', '{{ COUNTDOWNHEADER_URL }}');
 		});
 
 		$timerBox.show();
 	});
 </script>
-<!-- ENDIF -->
+{% endif %}
