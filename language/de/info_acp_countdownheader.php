@@ -3,7 +3,7 @@
 *
 * @version $Id: info_acp_countdownheader.php 98 2017-05-02 20:01:13Z Scanialady $
 * @package phpBB Extension - Countdown Header (deutsch)
-* @copyright (c) 2016 dmzx - http://www.dmzx-web.net
+* @copyright (c) 2016 dmzx - https://www.dmzx-web.net
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 *
 */

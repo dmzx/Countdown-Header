@@ -1,15 +1,17 @@
 <?php
 /**
-*
-* @package phpBB Extension - Countdown Header
-* @copyright (c) 2016 dmzx - https://www.dmzx-web.net
-* @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
-*
-*/
+ *
+ * Countdown Header. An extension for the phpBB Forum Software package.
+ * French translation by Galixte (https://www.galixte.com)
+ *
+ * @copyright (c) 2016 dmzx <https://www.dmzx-web.net>
+ * @license GNU General Public License, version 2 (GPL-2.0-only)
+ *
+ */
 
 /**
-* DO NOT CHANGE
-*/
+ * DO NOT CHANGE
+ */
 if (!defined('IN_PHPBB'))
 {
 	exit;
@@ -33,12 +35,12 @@ if (empty($lang) || !is_array($lang))
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 //
 // Some characters you may want to copy&paste:
-// ’ » “ ” …
+// ’ « » “ ” …
 //
 
 $lang = array_merge($lang, array(
-	'COUNTDOWNHEADER_COUNT_DAYS'				=> 'Dias restantes',
-	'COUNTDOWNHEADER_COUNT_HOURS'				=> 'Horas restantes',
-	'COUNTDOWNHEADER_COUNT_MINUTES'				=> 'Minutos',
-	'COUNTDOWNHEADER_COUNT_SECONDS'				=> 'Segundos',
+	'COUNTDOWNHEADER_COUNT_DAYS'		=> 'Jours restants',
+	'COUNTDOWNHEADER_COUNT_HOURS'		=> 'Heures restants',
+	'COUNTDOWNHEADER_COUNT_MINUTES'		=> 'Minutes',
+	'COUNTDOWNHEADER_COUNT_SECONDS'		=> 'Secondes',
 ));

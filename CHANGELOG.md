@@ -1,5 +1,10 @@
 ## Changelog
 
+### 1.0.3 - 2019-01-09
+
+- Twig update
+- URL update
+
 ### 1.0.2 - 2017-05-02
 
 - Added admin_controller
