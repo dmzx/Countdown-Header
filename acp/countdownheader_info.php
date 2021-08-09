@@ -13,16 +13,16 @@ class countdownheader_info
 {
 	function module()
 	{
-		return array(
+		return [
 			'filename'	=> '\dmzx\countdownheader\acp\countdownheader_module',
 			'title'		=> 'ACP_COUNTDOWNHEADER',
-			'modes'		=> array(
-				'config'	=> array(
+			'modes'		=> [
+				'config'	=> [
 					'title' => 'ACP_COUNTDOWNHEADER_CONFIG',
 					'auth' 	=> 'ext_dmzx/countdownheader && acl_a_board',
-					'cat' 	=> array('ACP_COUNTDOWNHEADER')
-				),
-			),
-		);
+					'cat' 	=> ['ACP_COUNTDOWNHEADER']
+				],
+			],
+		];
 	}
 }

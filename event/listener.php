@@ -46,25 +46,25 @@ class listener implements EventSubscriberInterface
 
 	static public function getSubscribedEvents()
 	{
-		return array(
+		return [
 			'core.user_setup'	=> 'load_language_on_setup',
 			'core.page_header'	=> 'page_header',
-		);
+		];
 	}
 
 	public function load_language_on_setup($event)
 	{
 		$lang_set_ext = $event['lang_set_ext'];
-		$lang_set_ext[] = array(
+		$lang_set_ext[] = [
 			'ext_name' => 'dmzx/countdownheader',
 			'lang_set' => 'common',
-		);
+		];
 		$event['lang_set_ext'] = $lang_set_ext;
 	}
 
 	public function page_header($event)
 	{
-		$this->template->assign_vars(array(
+		$this->template->assign_vars([
 			'COUNTDOWNHEADER_ENABLE'			=> $this->config['countdownheader_enable'] ? true : false,
 			'COUNTDOWNHEADER_TESTMODE'			=> $this->config['countdownheader_testmode'] ? true : false,
 			'COUNTDOWNHEADER_DATE'				=> $this->config['countdownheader_date'],
@@ -72,6 +72,6 @@ class listener implements EventSubscriberInterface
 			'COUNTDOWNHEADER_TEXT_SMALL'		=> $this->config['countdownheader_text_small'],
 			'COUNTDOWNHEADER_URL'				=> htmlspecialchars_decode($this->config['countdownheader_url']),
 			'PHPBB_IS_32'						=> ($this->files_factory !== null) ? true : false,
-		));
+		]);
 	}
 }

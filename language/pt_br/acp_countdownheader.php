@@ -14,7 +14,7 @@ if (!defined('IN_PHPBB'))
 
 if (empty($lang) || !is_array($lang))
 {
-	$lang = array();
+	$lang = [];
 }
 
 // DEVELOPERS PLEASE NOTE
@@ -33,7 +33,7 @@ if (empty($lang) || !is_array($lang))
 // ’ » “ ” …
 //
 
-$lang = array_merge($lang, array(
+$lang = array_merge($lang, [
 	'ACP_COUNTDOWNHEADER_CONFIG_SET'			=> 'Configuração',
 	'ACP_COUNTDOWNHEADER_VERSION'					=> 'Versão',
 	'ACP_COUNTDOWNHEADER_CONFIG_SAVED'				=> 'Configuração salva',
@@ -49,4 +49,4 @@ $lang = array_merge($lang, array(
 	'ACP_COUNTDOWNHEADER_TESTMODE_EXPLAIN'			=> 'Se este modo estiver ativado, somente os administradores poderão ver a contagem.',
 	'ACP_COUNTDOWNHEADER_URL' 						=> 'Link do Countdown Header',
 	'ACP_COUNTDOWNHEADER_URL_EXPLAIN'				=> 'URL relativa a seu diretório estará disponível quando estiver completo.<br />Por exemplo <em>downloads</em> ',
-));
+]);

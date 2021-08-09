@@ -86,7 +86,7 @@ class admin_controller
 			trigger_error($this->user->lang['ACP_COUNTDOWNHEADER_CONFIG_SAVED'] . adm_back_link($this->u_action));
 		}
 
-		$this->template->assign_vars(array(
+		$this->template->assign_vars([
 			'COUNTDOWNHEADER_VERSION'		=> $this->config['countdownheader_version'],
 			'COUNTDOWNHEADER_ENABLE'		=> $this->config['countdownheader_enable'],
 			'COUNTDOWNHEADER_TESTMODE'		=> $this->config['countdownheader_testmode'],
@@ -95,7 +95,7 @@ class admin_controller
 			'COUNTDOWNHEADER_TEXT_SMALL'	=> $this->config['countdownheader_text_small'],
 			'COUNTDOWNHEADER_URL'			=> $this->config['countdownheader_url'],
 			'U_ACTION'						=> $this->u_action,
-		));
+		]);
 	}
 
 	/**

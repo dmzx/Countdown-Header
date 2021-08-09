@@ -15,7 +15,7 @@ if (!defined('IN_PHPBB'))
 
 if (empty($lang) || !is_array($lang))
 {
-	$lang = array();
+	$lang = [];
 }
 
 // DEVELOPERS PLEASE NOTE
@@ -34,7 +34,7 @@ if (empty($lang) || !is_array($lang))
 // ’ » “ ” …
 //
 
-$lang = array_merge($lang, array(
+$lang = array_merge($lang, [
 	'ACP_COUNTDOWNHEADER_CONFIGURATION'				=> 'Configuratie',
 	'ACP_COUNTDOWNHEADER_CONFIG_SAVED'				=> 'Aftellen Header instellingen opgeslagen',
 	'ACP_COUNTDOWNHEADER_ENABLE'					=> 'Schakel aftel Header in',
@@ -49,4 +49,4 @@ $lang = array_merge($lang, array(
 	'ACP_COUNTDOWNHEADER_TESTMODE_EXPLAIN'			=> 'Wanneer test-modus geactiveerd is kunnen enkel beheerders de Aftel Header zien.',
 	'ACP_COUNTDOWNHEADER_URL' 						=> 'Aftel Header URL',
 	'ACP_COUNTDOWNHEADER_URL_EXPLAIN'				=> 'Relatieve URL naar je forum, zal beschikbaar zijn wanneer de teller voltooid is.<br />Stel in als voorbeeld <em>viewtopic.php?f=2</em> ',
-));
+]);

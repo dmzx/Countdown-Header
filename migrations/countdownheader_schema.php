@@ -15,15 +15,15 @@ class countdownheader_schema extends migration
 {
 	public function update_data()
 	{
-		return array(
+		return [
 			// Add configs
-			array('config.add', array('countdownheader_enable', '')),
-			array('config.add', array('countdownheader_date', '')),
-			array('config.add', array('countdownheader_text_big', '')),
-			array('config.add', array('countdownheader_text_small', '')),
-			array('config.add', array('countdownheader_url', '')),
-			array('config.add', array('countdownheader_version', '1.0.0')),
-			array('config.add', array('countdownheader_testmode', '')),
-		);
+			['config.add', ['countdownheader_enable', '']],
+			['config.add', ['countdownheader_date', '']],
+			['config.add', ['countdownheader_text_big', '']],
+			['config.add', ['countdownheader_text_small', '']],
+			['config.add', ['countdownheader_url', '']],
+			['config.add', ['countdownheader_version', '1.0.0']],
+			['config.add', ['countdownheader_testmode', '']],
+		];
 	}
 }

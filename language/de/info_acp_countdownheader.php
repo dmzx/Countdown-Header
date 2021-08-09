@@ -15,7 +15,7 @@ if (!defined('IN_PHPBB'))
 
 if (empty($lang) || !is_array($lang))
 {
-	$lang = array();
+	$lang = [];
 }
 
 // DEVELOPERS PLEASE NOTE
@@ -34,9 +34,9 @@ if (empty($lang) || !is_array($lang))
 // ‚ ‘ ’ « » „ “ ” …
 //
 
-$lang = array_merge($lang, array(
+$lang = array_merge($lang, [
 	'ACP_COUNTDOWNHEADER'			=> 'Countdown Header',
 	'ACP_COUNTDOWNHEADER_CONFIG'	=> 'Konfiguration',
 	//Log
 	'LOG_COUNTDOWNHEADER_SAVED'		=> '<strong>Countdown Header Einstellungen gespeichert</strong>',
-));
+]);

@@ -15,16 +15,16 @@ class countdownheader_1_0_2 extends migration
 {
 	static public function depends_on()
 	{
-		return array(
+		return [
 			'\dmzx\countdownheader\migrations\countdownheader_1_0_1',
-		);
+		];
 	}
 
 	public function update_data()
 	{
-		return array(
+		return [
 			// Update config
-			array('config.update', array('countdownheader_version', '1.0.2')),
-		);
+			['config.update', ['countdownheader_version', '1.0.2']],
+		];
 	}
 }

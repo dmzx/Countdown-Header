@@ -15,7 +15,7 @@ if (!defined('IN_PHPBB'))
 
 if (empty($lang) || !is_array($lang))
 {
-	$lang = array();
+	$lang = [];
 }
 
 // DEVELOPERS PLEASE NOTE
@@ -34,7 +34,7 @@ if (empty($lang) || !is_array($lang))
 // ‚ ‘ ’ « » „ “ ” …
 //
 
-$lang = array_merge($lang, array(
+$lang = array_merge($lang, [
 	'ACP_COUNTDOWNHEADER_CONFIGURATION'				=> 'Konfiguration',
 	'ACP_COUNTDOWNHEADER_CONFIG_SAVED'				=> 'Countdown Header Einstellungen gespeichert',
 	'ACP_COUNTDOWNHEADER_ENABLE'					=> 'Aktiviere Countdown Header',
@@ -49,4 +49,4 @@ $lang = array_merge($lang, array(
 	'ACP_COUNTDOWNHEADER_TESTMODE_EXPLAIN'			=> 'Wenn der Testmodus aktiviert ist, können nur Administratoren den Countdown Header sehen.',
 	'ACP_COUNTDOWNHEADER_URL' 						=> 'Countdown Header URL',
 	'ACP_COUNTDOWNHEADER_URL_EXPLAIN'				=> 'URL relativ zu deinem Board, wird verfügbar, wenn der Countdown abgelaufen ist.<br />Setze zum Beispiel <em>viewtopic.php?f=2</em> ein.',
-));
+]);

@@ -17,7 +17,7 @@ if (!defined('IN_PHPBB'))
 
 if (empty($lang) || !is_array($lang))
 {
-	$lang = array();
+	$lang = [];
 }
 
 // DEVELOPERS PLEASE NOTE
@@ -36,9 +36,9 @@ if (empty($lang) || !is_array($lang))
 // ’ » “ ” …
 //
 
-$lang = array_merge($lang, array(
+$lang = array_merge($lang, [
 	'COUNTDOWNHEADER_COUNT_DAYS'		=> 'Days left',
 	'COUNTDOWNHEADER_COUNT_HOURS'		=> 'Hours left',
 	'COUNTDOWNHEADER_COUNT_MINUTES'		=> 'Minutes',
 	'COUNTDOWNHEADER_COUNT_SECONDS'		=> 'Seconds',
-));
+]);
