@@ -1,6 +1,6 @@
 # Countdown Header Extension
 
-[![Build Status](https://travis-ci.org/dmzx/Countdown-Header.svg?branch=master)](https://travis-ci.org/dmzx/Countdown-Header)
+[![Build Status](https://github.com/dmzx/Countdown-Header/workflows/Tests/badge.svg)](https://github.com/phpbb-extensions/dmzx/Countdown-Header)
 
 ## Install
 
