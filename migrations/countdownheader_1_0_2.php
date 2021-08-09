@@ -9,7 +9,9 @@
 
 namespace dmzx\countdownheader\migrations;
 
-class countdownheader_1_0_2 extends \phpbb\db\migration\migration
+use phpbb\db\migration\migration;
+
+class countdownheader_1_0_2 extends migration
 {
 	static public function depends_on()
 	{
