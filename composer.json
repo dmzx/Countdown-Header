@@ -34,7 +34,7 @@
 			"host": "www.dmzx-web.net",
 			"directory": "/versions",
 			"filename": "countdownheader_version.json",
-            "ssl": true
+			"ssl": true
 		}
 	}
 }
