@@ -1,4 +1,10 @@
-## Changelog
+## Countdown Header Changelog
+
+### 1.0.3 - 2021-08-09
+
+- Code update.
+- Code cleanup.
+- Twig Update.
 
 ### 1.0.2 - 2017-05-02
 

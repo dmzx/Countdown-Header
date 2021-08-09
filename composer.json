@@ -3,8 +3,8 @@
 	"type": "phpbb-extension",
 	"description": "Countdown in header.",
 	"homepage": "https://www.dmzx-web.net",
-	"version": "1.0.2",
-	"time": "2017-05-02",
+	"version": "1.0.3",
+	"time": "2021-08-09",
 	"keywords": [
 		"phpbb",
 		"extension",
