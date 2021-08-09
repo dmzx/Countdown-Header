@@ -48,5 +48,5 @@ $lang = array_merge($lang, [
 	'ACP_COUNTDOWNHEADER_TESTMODE' 					=> 'Ativar modo de teste',
 	'ACP_COUNTDOWNHEADER_TESTMODE_EXPLAIN'			=> 'Se este modo estiver ativado, somente os administradores poderão ver a contagem.',
 	'ACP_COUNTDOWNHEADER_URL' 						=> 'Link do Countdown Header',
-	'ACP_COUNTDOWNHEADER_URL_EXPLAIN'				=> 'URL relativa a seu diretório estará disponível quando estiver completo.<br />Por exemplo <em>downloads</em> ',
+	'ACP_COUNTDOWNHEADER_URL_EXPLAIN'				=> 'URL relativa a seu diretório estará disponível quando estiver completo.<br>Por exemplo <em>downloads</em> ',
 ]);

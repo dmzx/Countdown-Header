@@ -47,5 +47,5 @@ $lang = array_merge($lang, [
 	'ACP_COUNTDOWNHEADER_TESTMODE' 					=> 'Activate test-mode',
 	'ACP_COUNTDOWNHEADER_TESTMODE_EXPLAIN'			=> 'If test-mode is activated only admins can view the Countdown Header.',
 	'ACP_COUNTDOWNHEADER_URL' 						=> 'Countdown Header URL',
-	'ACP_COUNTDOWNHEADER_URL_EXPLAIN'				=> 'URL relative to your board, will be available when countdown complete.<br />Set for example <em>viewtopic.php?f=2</em> ',
+	'ACP_COUNTDOWNHEADER_URL_EXPLAIN'				=> 'URL relative to your board, will be available when countdown complete.<br>Set for example <em>viewtopic.php?f=2</em> ',
 ]);

@@ -48,5 +48,5 @@ $lang = array_merge($lang, [
 	'ACP_COUNTDOWNHEADER_TESTMODE' 					=> 'Activeer test-modus',
 	'ACP_COUNTDOWNHEADER_TESTMODE_EXPLAIN'			=> 'Wanneer test-modus geactiveerd is kunnen enkel beheerders de Aftel Header zien.',
 	'ACP_COUNTDOWNHEADER_URL' 						=> 'Aftel Header URL',
-	'ACP_COUNTDOWNHEADER_URL_EXPLAIN'				=> 'Relatieve URL naar je forum, zal beschikbaar zijn wanneer de teller voltooid is.<br />Stel in als voorbeeld <em>viewtopic.php?f=2</em> ',
+	'ACP_COUNTDOWNHEADER_URL_EXPLAIN'				=> 'Relatieve URL naar je forum, zal beschikbaar zijn wanneer de teller voltooid is.<br>Stel in als voorbeeld <em>viewtopic.php?f=2</em> ',
 ]);

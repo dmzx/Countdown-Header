@@ -8,34 +8,34 @@
 	<fieldset>
 		<legend>{{ lang('ACP_COUNTDOWNHEADER_CONFIGURATION') }}</legend>
 		<dl>
-			<dt><label for="countdownheader_enable">{{ lang('ACP_COUNTDOWNHEADER_ENABLE') }}{{ lang('COLON') }}</label><br />
+			<dt><label for="countdownheader_enable">{{ lang('ACP_COUNTDOWNHEADER_ENABLE') ~ lang('COLON') }}</label><br>
 			<span>{{ lang('ACP_COUNTDOWNHEADER_ENABLE_EXPLAIN') }}</span></dt>
 			<dd><label><input type="radio" class="radio" name="countdownheader_enable" value="1"{% if COUNTDOWNHEADER_ENABLE %} id="countdownheader_enable" checked="checked"{% endif %} /> {{ lang('YES') }}</label>
 			<label><input type="radio" class="radio" name="countdownheader_enable" value="0"{% if not COUNTDOWNHEADER_ENABLE %} id="countdownheader_enable" checked="checked"{% endif %} /> {{ lang('NO') }}</label></dd>
 		</dl>
 		<dl>
-			<dt><label for="countdownheader_testmode">{{ lang('ACP_COUNTDOWNHEADER_TESTMODE') }}{{ lang('COLON') }}</label><br />
+			<dt><label for="countdownheader_testmode">{{ lang('ACP_COUNTDOWNHEADER_TESTMODE') ~ lang('COLON') }}</label><br>
 			<span>{{ lang('ACP_COUNTDOWNHEADER_TESTMODE_EXPLAIN') }}</span></dt>
 			<dd><label><input type="radio" class="radio" name="countdownheader_testmode" value="1"{% if COUNTDOWNHEADER_TESTMODE %} id="countdownheader_testmode" checked="checked"{% endif %} /> {{ lang('YES') }}</label>
 			<label><input type="radio" class="radio" name="countdownheader_testmode" value="0"{% if not COUNTDOWNHEADER_TESTMODE %} id="countdownheader_testmode" checked="checked"{% endif %} /> {{ lang('NO') }}</label></dd>
 		</dl>
 		<dl>
-			<dt><label for="countdownheader_date">{{ lang('ACP_COUNTDOWNHEADER_DATE') }}{{ lang('COLON') }}</label><br />
+			<dt><label for="countdownheader_date">{{ lang('ACP_COUNTDOWNHEADER_DATE') ~ lang('COLON') }}</label><br>
 			<span>{{ lang('ACP_COUNTDOWNHEADER_DATE_EXPLAIN') }}</span></dt>
 			<dd><input name="countdownheader_date" type="text" id="countdownheader_date" value="{{ COUNTDOWNHEADER_DATE }}" maxlength="255" /></dd>
 		</dl>
 		<dl>
-			<dt><label for="countdownheader_text_big">{{ lang('ACP_COUNTDOWNHEADER_TEXT_BIG') }}{{ lang('COLON') }}</label><br />
+			<dt><label for="countdownheader_text_big">{{ lang('ACP_COUNTDOWNHEADER_TEXT_BIG') ~ lang('COLON') }}</label><br>
 			<span>{{ lang('ACP_COUNTDOWNHEADER_TEXT_BIG_EXPLAIN') }}</span></dt>
 			<dd><input name="countdownheader_text_big" type="text" id="countdownheader_text_big" value="{{ COUNTDOWNHEADER_TEXT_BIG }}" maxlength="255" /></dd>
 		</dl>
 		<dl>
-			<dt><label for="countdownheader_text_small">{{ lang('ACP_COUNTDOWNHEADER_TEXT_SMALL') }}{{ lang('COLON') }}</label><br />
+			<dt><label for="countdownheader_text_small">{{ lang('ACP_COUNTDOWNHEADER_TEXT_SMALL') ~ lang('COLON') }}</label><br>
 			<span>{{ lang('ACP_COUNTDOWNHEADER_TEXT_SMALL_EXPLAIN') }}</span></dt>
 			<dd><input name="countdownheader_text_small" type="text" id="countdownheader_text_small" value="{{ COUNTDOWNHEADER_TEXT_SMALL }}" maxlength="255" /></dd>
 		</dl>
 		<dl>
-			<dt><label for="countdownheader_url">{{ lang('ACP_COUNTDOWNHEADER_URL') }}{{ lang('COLON') }}</label><br />
+			<dt><label for="countdownheader_url">{{ lang('ACP_COUNTDOWNHEADER_URL') ~ lang('COLON') }}</label><br>
 			<span>{{ lang('ACP_COUNTDOWNHEADER_URL_EXPLAIN') }}</span></dt>
 			<dd><input name="countdownheader_url" type="text" id="countdownheader_url" value="{{ COUNTDOWNHEADER_URL }}" class="text medium" maxlength="255" /></dd>
 		</dl>
