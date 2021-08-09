@@ -1,5 +1,5 @@
-<!-- IF not S_IS_BOT and COUNTDOWNHEADER_ENABLE -->
-<!-- IF (COUNTDOWNHEADER_TESTMODE and U_ACP) or not COUNTDOWNHEADER_TESTMODE -->
-	<!-- INCLUDECSS @dmzx_countdownheader/countdownheader.css -->
-<!-- ENDIF -->
-<!-- ENDIF -->
+{% if not S_IS_BOT and COUNTDOWNHEADER_ENABLE %}
+{% if (COUNTDOWNHEADER_TESTMODE and U_ACP) or not COUNTDOWNHEADER_TESTMODE %}
+	{% INCLUDECSS '@dmzx_countdownheader/countdownheader.css' %}
+{% endif %}
+{% endif %}
