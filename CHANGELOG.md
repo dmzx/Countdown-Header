@@ -1,5 +1,9 @@
 ## Countdown Header Changelog
 
+### 1.0.4 - 2024-12-16
+
+- Code update for conflict with phpBB Countdown extension.
+
 ### 1.0.3 - 2021-08-09
 
 - Code update.

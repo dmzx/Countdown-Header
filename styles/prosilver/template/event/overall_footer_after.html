@@ -2,7 +2,7 @@
 {% INCLUDEJS 'jquery.jcountdownheader.min.js' %}
 <script>
 	$(function() {
-		var $timerBox = $('#countdown-timer');
+		var $timerBox = $('#countdownheader-timer');
 		$timerBox.html('<span class="timer-big"></span><span class="timer-small"></span>');
 		var $timerBig = $timerBox.find('.timer-big');
 		var $timerSmall = $timerBox.find('.timer-small');
@@ -11,7 +11,7 @@
 
 		var utc = new Date('{{ COUNTDOWNHEADER_DATE }}').getTime();
 
-		$timerBox.countdown(utc).on('update.countdown', function(event) {
+		$timerBox.countdownheader(utc).on('update.countdownheader', function(event) {
 			if (event.offset.totalDays > 0) {
 				number = event.strftime('%D');
 				unit = '{{ lang('COUNTDOWNHEADER_COUNT_DAYS')|escape('js') }}';
@@ -27,7 +27,7 @@
 			}
 			$timerBig.html(number);
 			$timerSmall.html(unit);
-		}).on('finish.countdown', function() {
+		}).on('finish.countdownheader', function() {
 			$timerBig.html('{{ COUNTDOWNHEADER_TEXT_BIG }}');
 			$timerSmall.html('{{ COUNTDOWNHEADER_TEXT_SMALL }}');
 			$timerBox.attr('href', '{{ COUNTDOWNHEADER_URL }}');
